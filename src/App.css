@@ -1,5 +1,77 @@
+
 .App {
+  margin: auto;
+  font-family: "DecorFont", sans-serif;
+}
+
+.main-picture {
+  position: relative;
+}
+
+.picture-hidden {
+  opacity: 0;
+}
+
+.picture-visible {
+  opacity: 1;
+  transition: opacity 3s;
+}
+
+.logo {
+  width: 100%;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  border: 2px solid red;
+  border-radius: 40% 0;
+  background-color: white;
+  color: black;
+  font-size: 16px;
   text-align: center;
+  line-height: 1.5;
+  box-shadow: inset 0 5px 15px 0 #ff0000db;
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity 4s;
+}
+
+.guest-name {
+  font-weight: 500;
+}
+
+.bride {
+  margin-bottom: 90px;
+  font-size: 36px;
+  color: red;
+  font-family: "DecorFont", sans-serif;
+}
+
+.taras {
+  position: absolute;
+  top: 90px;
+  left: 20px;
+}
+
+.and {
+  position: absolute;
+  top: 110px;
+  left: 105px;
+}
+
+.marta {
+  position: absolute;
+  top: 130px;
+  right: 15px;
 }
 
 .App-logo {
@@ -35,4 +107,165 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.calendar {
+  width: 200px;
+  margin: 0 auto 35px;
+}
+
+.calendar-title {
+  position: relative;
+  margin: 20px auto 15px;
+  text-align: center;
+  font-size: 26px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -50px;
+    width: 50px;
+    height: 50px;    
+    background: url("./images/butterfly.png") no-repeat center / contain;
+    z-index: -1;
+  }
+}
+
+.move {
+  &::after {
+    top: -28px;
+    left: 22px;
+    transition: all 4s cubic-bezier(.13,.72,1,1);
+  }
+}
+
+.wedding-day {
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  overflow: visible !important;
+}
+
+.calendar abbr[title] {
+  text-decoration: none !important;
+  /* font-weight: 700; */
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.react-calendar__tile--active {
+  position: relative;
+}
+
+.react-calendar__tile--active::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 38px;
+  height: 38px;
+  background:  url("./images/heart.svg") center  no-repeat ;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  text-align: center;
+}
+
+.timing {
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.timing-title,
+.dress-title {
+  margin: 0 auto 15px;
+  text-align: center;
+  font-size: 26px;
+}
+
+.timing .time {
+  font-size: 22px;
+}
+
+.timing-item {
+  margin-bottom: 30px;
+}
+
+.timing button {
+  margin-top: 10px;
+  padding: 0 15px;
+  background-color: transparent;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.timing button a {
+  font-family: "DecorFont", sans-serif;
+  color: black !important;
+  text-decoration: none;
+}
+
+.dress-text {
+  margin: 0px 40px 45px;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  &::before {
+    position: absolute;
+    content: "";
+    background: url("./images/letter.png") center/cover no-repeat;
+    filter: blur(20px);
+    transform: scale(1.2);
+    inset: 0;
+    z-index: 1;
+  } 
+}
+
+.img-visible {
+  width: 100%;
+  z-index: 2;
+  opacity: 1;
+  scale: 1;
+}
+
+.img-modified {
+  width: 100%;
+  z-index: 2;
+  opacity: 0;
+  scale: 3;
+  transition: opacity 3s, scale 3s;
+}
+
+.modal-hide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  background-color: black;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: url("./images/letter.png") center/cover no-repeat;
+    filter: blur(20px);
+    transform: scale(1.2);
+    inset: 0;
+    z-index: 1;
+  } 
+
+}
+
+.wedding {
+  width: 100%;
 }
