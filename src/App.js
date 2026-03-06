@@ -17,7 +17,7 @@ function App() {
     }, 3000);
     setTimeout(() => {
       setTextStyle("visible");
-    }, 4000);
+    }, 6000);
     setTimeout(() => {
       setButterflyMove("move");
     }, 12000);
