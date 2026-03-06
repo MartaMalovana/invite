@@ -1,10 +1,8 @@
 import "./App.css";
 import { useState, useEffect } from "react";
 import orn from "./images/red-flow.jpg";
-// import butterfly from "./images/butterfly.png";
 import Calendar from "react-calendar";
 import letter from "./images/letter.png";
-import wedding from "./images/7aTRzjVTqU0.jpg";
 
 function App() {
   const [modalIsOpen, setModalIsOpen] = useState(true);
@@ -34,7 +32,7 @@ function App() {
     <div className="App">
       {modalIsOpen ? (
         <div className={"modal"} onClick={handleHideModal}>
-          <img src={letter} className={imgStyle} />
+          <img src={letter} className={imgStyle} alt="letter"/>
         </div>
       ) : (
         <>
@@ -52,7 +50,6 @@ function App() {
                 <div className="marta">Марта,</div>
               </div>
               запрошуємо вас на наше весілля!
-              {/* <img src={butterfly} alt="butterfly" className="butterfly" /> */}
             </div>
             <div></div>
           </div>
@@ -111,7 +108,6 @@ function App() {
               Найважливіше для нас - ваша присутність!
             </div>
           </div>
-          {/* <img src={wedding} className="wedding"/> */}
         </>
       )}
     </div>
