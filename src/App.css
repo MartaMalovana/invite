@@ -17,6 +17,18 @@
   transition: opacity 3s;
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .logo {
   width: 100%;
 }
@@ -41,7 +53,7 @@
 }
 
 .visible {
-  opacity: 1;
+  opacity: 1 !important;
   transition: opacity 4s;
 }
 
@@ -112,6 +124,7 @@
 .calendar {
   width: 200px;
   margin: 0 auto 35px;
+  opacity: 0;
 }
 
 .calendar-title {
@@ -122,20 +135,22 @@
   &::after {
     content: "";
     position: absolute;
-    top: -8px;
-    left: -50px;
+    top: -95px;
+    left: -70px;
     width: 50px;
-    height: 50px;    
-    background: url("./images/butterfly.png") no-repeat center / contain;
-    z-index: -1;
+    height: 50px;  
+    border-radius: 50%;  
+    background: url("./images/butterfly1.png") no-repeat center / contain;
+    z-index: 2;
   }
 }
 
 .move {
   &::after {
+    z-index: -1;
     top: -28px;
     left: 22px;
-    transition: all 4s cubic-bezier(.13,.72,1,1);
+    transition: top 5s cubic-bezier(.13,.72,1,1), left 5s cubic-bezier(.13,.72,1,1), z-index 5s cubic-bezier(.13,.72,1,1);
   }
 }
 
@@ -235,6 +250,7 @@
   z-index: 2;
   opacity: 1;
   scale: 1;
+  animation: pulse 2s infinite;
 }
 
 .img-modified {

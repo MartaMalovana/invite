@@ -17,10 +17,10 @@ function App() {
     }, 3000);
     setTimeout(() => {
       setTextStyle("visible");
-    }, 6000);
+    }, 4000);
     setTimeout(() => {
       setButterflyMove("move");
-    }, 4000);
+    }, 12000);
   }, []);
 
   const handleHideModal = () => {
@@ -54,7 +54,7 @@ function App() {
             <div></div>
           </div>
           {/* Calendar */}
-          <div className="calendar">
+          <div className={`calendar ${textStyle}`}>
             <div className={`calendar-title ${butterflyMove}`}>
               Травень 2026
             </div>
