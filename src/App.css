@@ -1,11 +1,18 @@
 
 .App {
+  position: relative;
   margin: auto;
+  padding-bottom: 20px;
   font-family: "DecorFont", sans-serif;
+  background-color: #884b62;
+  color: #ece0c3;
+  overflow: hidden;
 }
 
 .main-picture {
   position: relative;
+  height: 530px;
+  background-color: #6b1f3c;
 }
 
 .picture-hidden {
@@ -31,25 +38,47 @@
 
 .logo {
   width: 100%;
+  position: absolute;
+}
+
+.first {
+  width: 140%;
+  top: -100px;
+  left: -110px;
+}
+
+.second {
+  width: 130%;
+  bottom: -70px;
+  left: 40px;
+  transform: rotate(200deg);
+}
+
+.third {
+  width: 100%;
+  top: 150px;
+  left: -80px;
+  transform: rotate(290deg);
+}
+
+.fourth {
+  bottom: -250px;
+  transform: rotate(50deg);
+  left: -160px;
 }
 
 .text {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 110px;
+  right: 20px;
   width: 200px;
   height: 200px;
   padding: 20px;
-  border: 2px solid red;
-  border-radius: 40% 0;
-  background-color: white;
-  color: black;
+  color: #ece0c3;
   font-size: 16px;
   text-align: center;
   line-height: 1.5;
-  box-shadow: inset 0 5px 15px 0 #ff0000db;
-  opacity: 0;
+  border: 1px solid #ece0c3;
 }
 
 .visible {
@@ -64,7 +93,7 @@
 .bride {
   margin-bottom: 90px;
   font-size: 36px;
-  color: red;
+  color: #ece0c3;
   font-family: "DecorFont", sans-serif;
 }
 
@@ -188,14 +217,16 @@
 
 .timing {
   margin: 0 auto 45px;
+  padding: 50px 0 0;
   text-align: center;
+  font-size: 18px;
 }
 
 .timing-title,
 .dress-title {
   margin: 0 auto 15px;
   text-align: center;
-  font-size: 26px;
+  font-size: 28px;
 }
 
 .timing .time {
@@ -203,21 +234,21 @@
 }
 
 .timing-item {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .timing button {
   margin-top: 10px;
   padding: 0 15px;
-  background-color: transparent;
-  border: 1px solid black;
+  background-color: #6b1f3c;
+  border: 1px solid #ece0c3;
   cursor: pointer;
 }
 
 .timing button a {
   font-family: "DecorFont", sans-serif;
-  color: black !important;
   text-decoration: none;
+  color: #ece0c3;
 }
 
 .dress-text {
