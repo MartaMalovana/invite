@@ -4,7 +4,8 @@
   margin: auto;
   padding-bottom: 20px;
   font-family: "DecorFont", sans-serif;
-  background-color: #884b62;
+  /* background-color: #884b62; */
+  background-color: #ac8282;
   color: #ece0c3;
   overflow: hidden;
 }
@@ -12,7 +13,16 @@
 .main-picture {
   position: relative;
   height: 530px;
-  background-color: #6b1f3c;
+  /* background-color: #6b1f3c; */
+  &::before {
+    position: absolute;
+    content: "";
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    border: 1px solid #ece0c3;
+  }
 }
 
 .picture-hidden {
@@ -78,7 +88,6 @@
   font-size: 16px;
   text-align: center;
   line-height: 1.5;
-  border: 1px solid #ece0c3;
 }
 
 .visible {
@@ -208,7 +217,7 @@
   transform: translate(-50%, -50%);
   width: 38px;
   height: 38px;
-  background:  url("./images/heart.svg") center  no-repeat ;
+  /* background:  url("./images/heart.svg") center  no-repeat ; */
 }
 
 .react-calendar__month-view__weekdays__weekday {

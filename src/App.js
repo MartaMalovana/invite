@@ -1,6 +1,6 @@
 import "./App.css";
 // import { useState, useEffect } from "react";
-import orn from "./images/vine-flow.png";
+import orn from "./images/red-flow.png";
 
 function App() {
   // const [modalIsOpen, setModalIsOpen] = useState(true);
@@ -41,7 +41,7 @@ function App() {
             <div className="marta">Марта,</div>
           </div>
           запрошуємо вас на наше весілля!
-          <div>30.05.2026</div>
+          <div>30 травня 2026</div>
         </div>
 
         <img src={orn} alt="logo" className={`logo picture-visible first`} />
