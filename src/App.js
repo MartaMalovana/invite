@@ -1,15 +1,13 @@
 import "./App.css";
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import orn from "./images/vine-flow.png";
-import Calendar from "react-calendar";
-import letter from "./images/letter.png";
 
 function App() {
-  const [modalIsOpen, setModalIsOpen] = useState(true);
-  const [imgStyle, setImgStyle] = useState("img-visible");
-  const [pictureStyle, setPictureStyle] = useState("picture-hidden");
-  const [textStyle, setTextStyle] = useState("");
-  const [butterflyMove, setButterflyMove] = useState("");
+  // const [modalIsOpen, setModalIsOpen] = useState(true);
+  // const [imgStyle, setImgStyle] = useState("img-visible");
+  // const [pictureStyle, setPictureStyle] = useState("picture-hidden");
+  // const [textStyle, setTextStyle] = useState("");
+  // const [butterflyMove, setButterflyMove] = useState("");
 
   // useEffect(() => {
   //   setTimeout(() => {
@@ -23,10 +21,10 @@ function App() {
   //   }, 12000);
   // }, []);
 
-  const handleHideModal = () => {
-    setImgStyle("img-modified");
-    setTimeout(() => setModalIsOpen(false), 2000);
-  };
+  // const handleHideModal = () => {
+  //   setImgStyle("img-modified");
+  //   setTimeout(() => setModalIsOpen(false), 2000);
+  // };
 
   return (
     <div className="App">
