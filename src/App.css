@@ -2,11 +2,10 @@
 .App {
   position: relative;
   margin: auto;
-  padding-bottom: 20px;
   font-family: "DecorFont", sans-serif;
   /* background-color: #884b62; */
   background-color: #fff;
-  color: red;
+  color: #425a3d;
   overflow: hidden;
 }
 
@@ -21,7 +20,6 @@
     height: 90%;
     top: 5%;
     left: 5%;
-    border: 1px solid red;
   }
 }
 
@@ -52,23 +50,30 @@
 }
 
 .first {
-  width: 140%;
-  top: -100px;
-  left: -120px;
-}
-
-.second {
-  width: 130%;
-  bottom: -70px;
-  left: 40px;
-  transform: rotate(200deg);
-}
-
-.third {
   width: 100%;
-  top: 150px;
-  left: -80px;
-  transform: rotate(290deg);
+  top: 0px;
+  left: 0px;
+  scale: 1.2;
+  /* border-radius: 50%; */
+  /* opacity: 0; */
+  transition: scale 4s, border-radius 3s, opacity 3s;
+}
+
+.two {
+  width: 100px;
+  top: 0;
+  right: -10px;
+  transform: rotate(190deg);
+  scale: 1.2;
+  /* border-radius: 50%; */
+  /* opacity: 0; */
+  transition: scale 4s, border-radius 3s, opacity 3s;
+}
+
+.three {
+  width: 110px;
+  bottom: 0px;
+  left: 0px;
 }
 
 .fourth {
@@ -77,15 +82,22 @@
   left: -160px;
 }
 
+.scaled {
+  scale: 1;
+  border-radius: 0;
+  opacity: 1;
+}
+
 .text {
   position: absolute;
-  top: 110px;
-  right: 20px;
-  width: 200px;
-  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
   padding: 20px;
-  color: red;
-  font-size: 16px;
+  color: #425a3d;
+  font-size: 18px;
   text-align: center;
   line-height: 1.5;
 }
@@ -101,14 +113,14 @@
 
 .bride {
   margin-bottom: 90px;
-  font-size: 36px;
-  color: red;
+  font-size: 38px;
+  color: #425a3d;
   font-family: "DecorFont", sans-serif;
 }
 
 .taras {
   position: absolute;
-  top: 90px;
+  top: 115px;
   left: 20px;
 }
 
@@ -225,8 +237,9 @@
 }
 
 .timing {
-  margin: 0 auto 45px;
-  padding: 50px 0 0;
+  position: relative;
+  margin: 0 auto 0;
+  padding: 50px 0 50px;
   text-align: center;
   font-size: 18px;
 }
@@ -250,14 +263,15 @@
   margin-top: 10px;
   padding: 0 15px;
   background-color: #fff;
-  border: 1px solid red;
+  color: #425a3d;
+  border: 1px solid #425a3d;
   cursor: pointer;
 }
 
 .timing button a {
   font-family: "DecorFont", sans-serif;
   text-decoration: none;
-  color: red;
+  color: #425a3d;
 }
 
 .dress-text {

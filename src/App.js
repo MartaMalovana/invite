@@ -1,6 +1,8 @@
 import "./App.css";
-// import { useState, useEffect } from "react";
-import orn from "./images/red-flow.png";
+import { useState, useEffect } from "react";
+import orn from "./images/white-flow.png";
+import flLeft from "./images/flower_center.png";
+import flCenter from "./images/flower_left.png";
 
 function App() {
   // const [modalIsOpen, setModalIsOpen] = useState(true);
@@ -8,18 +10,13 @@ function App() {
   // const [pictureStyle, setPictureStyle] = useState("picture-hidden");
   // const [textStyle, setTextStyle] = useState("");
   // const [butterflyMove, setButterflyMove] = useState("");
+  const [imgScaled, setImgScaled] = useState("");
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setPictureStyle("picture-visible");
-  //   }, 3000);
-  //   setTimeout(() => {
-  //     setTextStyle("visible");
-  //   }, 6000);
-  //   setTimeout(() => {
-  //     setButterflyMove("move");
-  //   }, 12000);
-  // }, []);
+  useEffect(() => {
+    setTimeout(() => {
+      setImgScaled("scaled");
+    }, 0);
+  }, []);
 
   // const handleHideModal = () => {
   //   setImgStyle("img-modified");
@@ -30,23 +27,20 @@ function App() {
     <div className="App">
       {/* Main picture */}
       <div className="main-picture">
+        <img src={orn} alt="logo" className={`logo picture-visible first ${imgScaled}`} />
         <div className={`text visible`}>
           <div className="guest">
             Любі <div className="guest-name">Дмитро, Тетяна і Сашко!</div>
           </div>
           Від щирого серця ми,
           <div className="bride">
-            <div className="taras">Тарас</div>
-            <div className="and">та</div>
-            <div className="marta">Марта,</div>
+            <div className="taras">Тарас та Марта,</div>
+            <div className="and"></div>
+            <div className="marta"></div>
           </div>
           запрошуємо вас на наше весілля!
           <div>30 травня 2026</div>
         </div>
-
-        <img src={orn} alt="logo" className={`logo picture-visible first`} />
-        <img src={orn} alt="logo" className={`logo picture-visible second`} />
-        <img src={orn} alt="logo" className={`logo picture-visible third`} />
 
         <div></div>
       </div>
@@ -83,20 +77,11 @@ function App() {
             </a>
           </button>
         </div>
+        <img src={flCenter} alt="logo" className={`logo picture-visible two ${imgScaled}`} />
+        <img src={flLeft} alt="logo" className={`logo picture-visible three`} />
       </div>
-      {/* Dress code */}
-      {/* <div className="dress">
-        <div className="dress-text">
-          Друзі! У цей складний час наша країна захищає не тільки землю предків,
-          але й нашу багатогранну самобутню культуру. Ми вирішили, що наше
-          весілля матиме етнічну родзинку. Але дрес-коду немає. Найважливіше для
-          нас - ваша присутність!
-        </div>
-      </div> */}
-      <img src={orn} alt="logo" className={`logo picture-visible fourth`} />
     </div>
   );
 }
 
 export default App;
-
