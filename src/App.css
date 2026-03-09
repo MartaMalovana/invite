@@ -5,8 +5,8 @@
   padding-bottom: 20px;
   font-family: "DecorFont", sans-serif;
   /* background-color: #884b62; */
-  background-color: #ac8282;
-  color: #ece0c3;
+  background-color: #fff;
+  color: red;
   overflow: hidden;
 }
 
@@ -21,7 +21,7 @@
     height: 90%;
     top: 5%;
     left: 5%;
-    border: 1px solid #ece0c3;
+    border: 1px solid red;
   }
 }
 
@@ -54,7 +54,7 @@
 .first {
   width: 140%;
   top: -100px;
-  left: -110px;
+  left: -120px;
 }
 
 .second {
@@ -84,7 +84,7 @@
   width: 200px;
   height: 200px;
   padding: 20px;
-  color: #ece0c3;
+  color: red;
   font-size: 16px;
   text-align: center;
   line-height: 1.5;
@@ -102,7 +102,7 @@
 .bride {
   margin-bottom: 90px;
   font-size: 36px;
-  color: #ece0c3;
+  color: red;
   font-family: "DecorFont", sans-serif;
 }
 
@@ -249,15 +249,15 @@
 .timing button {
   margin-top: 10px;
   padding: 0 15px;
-  background-color: #6b1f3c;
-  border: 1px solid #ece0c3;
+  background-color: #fff;
+  border: 1px solid red;
   cursor: pointer;
 }
 
 .timing button a {
   font-family: "DecorFont", sans-serif;
   text-decoration: none;
-  color: #ece0c3;
+  color: red;
 }
 
 .dress-text {
