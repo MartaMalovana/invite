@@ -5,13 +5,14 @@
   font-family: "DecorFont", sans-serif;
   /* background-color: #884b62; */
   background-color: #fff;
-  color: #425a3d;
+  color: #ff0000;
   overflow: hidden;
 }
 
 .main-picture {
   position: relative;
-  height: 530px;
+  height: auto;
+  /* height: 530px; */
   /* background-color: #6b1f3c; */
   &::before {
     position: absolute;
@@ -46,6 +47,10 @@
 
 .logo {
   width: 100%;
+  /* position: absolute; */
+}
+
+.flower {
   position: absolute;
 }
 
@@ -53,27 +58,29 @@
   width: 100%;
   top: 0px;
   left: 0px;
-  scale: 1.2;
+  scale: 2;
+  border-bottom: 2px solid #576155;
   /* border-radius: 50%; */
   /* opacity: 0; */
   transition: scale 4s, border-radius 3s, opacity 3s;
 }
 
 .two {
-  width: 100px;
-  top: 0;
+  width: 120px;
+  top: -15px;
   right: -10px;
-  transform: rotate(190deg);
-  scale: 1.2;
+  /* transform: rotate(190deg); */
+  scale: 1;
   /* border-radius: 50%; */
-  /* opacity: 0; */
-  transition: scale 4s, border-radius 3s, opacity 3s;
+  opacity: 0;
+  transition: scale 4s, border-radius 3s, opacity 7s;
 }
 
 .three {
-  width: 110px;
-  bottom: 0px;
+  width: 140px;
+  bottom: -10px;
   left: 0px;
+  transform: rotate(190deg);
 }
 
 .fourth {
@@ -96,10 +103,11 @@
   width: 250px;
   height: 250px;
   padding: 20px;
-  color: #425a3d;
+  color: #ff0000;
   font-size: 18px;
   text-align: center;
   line-height: 1.5;
+  opacity: 0;
 }
 
 .visible {
@@ -114,7 +122,7 @@
 .bride {
   margin-bottom: 90px;
   font-size: 38px;
-  color: #425a3d;
+  color: #ff0000;
   font-family: "DecorFont", sans-serif;
 }
 
@@ -249,6 +257,7 @@
   margin: 0 auto 15px;
   text-align: center;
   font-size: 28px;
+  opacity: 0;
 }
 
 .timing .time {
@@ -257,6 +266,7 @@
 
 .timing-item {
   padding-bottom: 30px;
+  opacity: 0;
 }
 
 .timing button {
@@ -339,4 +349,33 @@
 
 .wedding {
   width: 100%;
+}
+
+.wed-style {
+  width: 50%;
+  margin: 20px auto 0;
+  opacity: 0;
+}
+
+.rombs {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  width: 30px;
+  height: 90px;
+  background-image: url("./images/romb.png"); 
+  background-repeat: repeat-y;
+  background-size: 30px;
+  opacity: 0;
+}
+
+.rombs-two {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  width: 30px;
+  height: 90px;
+  background-image: url("./images/romb.png"); 
+  background-repeat: repeat-y;
+  background-size: 30px;
 }
