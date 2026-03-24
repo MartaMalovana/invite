@@ -41,7 +41,7 @@ function App() {
         />
         <div className={`text ${textVisible}`}>
           <div className="guest">
-            Любі <div className="guest-name">Дмитро, Тетяна і Сашко!</div>
+            Любі <div className="guest-name">мама і тато!</div>
           </div>
           Від щирого серця ми,
           <div className="bride">
@@ -51,7 +51,9 @@ function App() {
           </div>
           запрошуємо вас на наше весілля
           <div>30 травня 2026</div>
-          <div><img src={heart} alt="heart" style={{width: "20px"}}/></div>
+          <div>
+            <img src={heart} alt="heart" style={{ width: "20px" }} />
+          </div>
         </div>
       </div>
       {/* Timing */}

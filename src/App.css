@@ -276,7 +276,8 @@
 .timing button {
   margin-top: 10px;
   padding: 0 15px;
-  background-color: #fff;
+  background-color: white;
+  background-color: #6a746a43;
   /* border: 1px solid #425a3d; */
   border: 1px solid #b90c0c;
   cursor: pointer;
@@ -363,7 +364,7 @@
 
 .rombs {
   position: absolute;
-  top: 20px;
+  top: 50px;
   left: 10px;
   width: 30px;
   height: 90px;
@@ -375,7 +376,7 @@
 
 .rombs-two {
   position: absolute;
-  bottom: 20px;
+  bottom: 50px;
   right: 10px;
   width: 30px;
   height: 90px;
