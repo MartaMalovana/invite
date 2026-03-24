@@ -12,7 +12,6 @@
 .main-picture {
   position: relative;
   height: auto;
-  display: block;
   /* height: 530px; */
   /* background-color: #6b1f3c; */
   &::before {
@@ -48,6 +47,8 @@
 
 .logo {
   width: 100%;
+  
+  display: block;
   /* position: absolute; */
 }
 
