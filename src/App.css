@@ -12,6 +12,7 @@
 .main-picture {
   position: relative;
   height: auto;
+  display: block;
   /* height: 530px; */
   /* background-color: #6b1f3c; */
   &::before {
@@ -67,13 +68,14 @@
 
 .two {
   width: 120px;
-  top: -15px;
+  top: -2px;
   right: -10px;
   /* transform: rotate(190deg); */
   scale: 1;
   /* border-radius: 50%; */
   opacity: 0;
   transition: scale 4s, border-radius 3s, opacity 7s;
+  border-top-left-radius: 10%;
 }
 
 .three {
