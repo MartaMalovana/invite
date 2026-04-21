@@ -1,14 +1,14 @@
 import "./App.css";
 import { useState, useEffect } from "react";
-import flLeft from "./images/top_right_flowers.png";
+import flLeft from "./images/top_right_flowers-o.png";
 import heart from "./images/heart.svg";
-import topleft from "./images/topleft2.png";
-import topcenter from "./images/topcenter2.png";
-import topright from "./images/topright2.png";
-import bottomleft from "./images/bottomleft.png";
-import bottomcenter from "./images/bottomcenter.png";
-import bottomright from "./images/bottomright.png";
-import centerlf from "./images/center-fl.png";
+import topleft from "./images/topleft2-o.png";
+import topcenter from "./images/topcenter2-o.png";
+import topright from "./images/topright2-o.png";
+import bottomleft from "./images/bottomleft-o.png";
+import bottomcenter from "./images/bottomcenter-o.png";
+import bottomright from "./images/bottomright-o.png";
+import centerlf from "./images/center-fl-o.png";
 import guestList from "./guests.json";
 
 function App() {
