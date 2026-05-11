@@ -140,11 +140,11 @@ function App() {
         <div className={`timing-item ${timingVisible}`}>
           <div className="time">15:00</div>
           <div>Церемонія одруження. Бенкет</div>
-          <div>Meat Club,</div>
-          <div>вул.Городоцька 12, Зимна Вода</div>
+          <div>Ресторан  "Наварія Нова",</div>
+          <div>вул.Чайковського, Наварія (Пустомит. р-н)</div>
           <button>
             <a
-              href="https://maps.app.goo.gl/AHbYqrJPzfic9Y6k9"
+              href="https://maps.app.goo.gl/BtWkrHuqi5PEggsH9"
               target="_blank"
               rel="noopener noreferrer"
             >
