@@ -123,7 +123,7 @@ function App() {
       <div className={`timing`}>
         <div className={`timing-title ${timingVisible}`}>Таймінг весілля</div>
         <div className={`timing-item ${timingVisible}`}>
-          <div className="time">14:00</div>
+          <div className="time">13:30</div>
           <div>Вінчання</div>
           <div>Церква Св. Петра і Павла, </div>
           <div>вул.Львівська, Зимна Вода</div>
